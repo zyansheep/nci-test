@@ -6,25 +6,4 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-# Async
-async-std = "1.12.0"
-futures = "0.3.26"
-thiserror = "1.0.38"
-eyre = "0.6.8"
-
-# ECS
-bevy_ecs = { git = "https://github.com/bevyengine/bevy", branch = "main" }
-
-# Serialization
-rkyv = { version = "0.7.39", features = ["validation"] } # Zero-Copy Serialization
-bytecheck = "0.6.9"
-rkyv_codec = { git = "https://github.com/zyansheep/rkyv_codec" }
-serde = "1.0.152"
-
-# Data & Utilities
-hashdb = { git = "https://github.com/libdither/disp" }
-nalgebra = { version = "0.32.1", features = ["rkyv-serialize"] }
-num = "0.4.0"
-log = "0.4.17"
-derive_more = "0.99.17"
-nnmf_nalgebra = "0.1.0"
+log = { git = "https://github.com/rust-lang/log" }
